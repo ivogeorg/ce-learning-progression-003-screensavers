@@ -1,8 +1,16 @@
-# CPE 1040 - Introduction to Computer Engeneering
+# CPE 1040 - Spring 2020
 
-## Assignment: Exploring JavaScript by Designing a Microbit "Screensaver"
+## Assignment 3: Microbit Screensavers
 
-### 1. Summary
+This is the third assignment for the Spring 2020 installment of the CPE 1040 - Intro to Computer Engineering course at MSU Denver.
+
+### Overview
+
+This assignnment is more involved than the first two, but uses the same basic micro:bit functions. With some upfront design and several iterations of the implementation, it is within any student who has completed the previous two assignments. It asks you to create 5 "screensavers" for the micro:bit's 25 LED matrix. The screensavers are moving patterns of lights that are displayed when the micro:bit is "put to sleep" and until it is "woken up".
+
+### Requirements
+
+#### 1. Summary
 
 This assignment asks you to design a program and implement it in micro:bit JavaScript (that is, TypeScript) from scratch. **No Blocks!** This assignment is submitted through Github.
 
