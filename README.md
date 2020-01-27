@@ -53,7 +53,10 @@ This assignnment is more involved than the first two, but uses the same basic mi
 
 2. A suggested progression for the development of your program can be:
    1. Two different modes, changed by pressing buttons A and B. In this version, you can display two different icons to show in which mode you are.
-   2. TODO
+   2. One screensaver working in _asleep_ mode, without a gesture, and a sentence scrolling in _working_ mode. You should remove the icons from (1), as they are no longer needed. Include the description of the frist screensaver in the [screensavers](#screensavers) section of the README. 
+   3. A second screensaver, with two different guestures to trigger each one. Include the second description in the README.
+   4. Separate commits as you add each of the remaining 3 screensavers, along with descriptions in the README.
+   5. Add the demo video URL to the README.
 
 #### 6. README
 
@@ -61,11 +64,15 @@ This assignnment is more involved than the first two, but uses the same basic mi
 
 #### 7. Demo video
 
-1. Record a short video with your phone of your "screensavers" changing from gesture to gesture.
+1. Record a 60 second video that shows:
+   1. Switching to _asleep_ mode.
+   2. Switching among the 5 screensavers with guestures.
+   3. Switching to _working_ mode.
+   4. **BONUS:** Show the screensaver timing out and blanking the screen. _Note that the video should be no longer than 60 seconds!_
 
 2. Upload it to [Imgur](https://help.imgur.com/hc/en-us/articles/115000083326-What-files-can-I-upload-What-is-the-size-limit-).
 
-3. Include the URL in the [demo URL](#demo-url) section of the README.
+3. Include the URL in the [Demo video](#demo-video) section of the README.
 
 ## Resources
 
@@ -117,13 +124,8 @@ This assignnment is more involved than the first two, but uses the same basic mi
 
 ## Screensavers
 
-### SS 1
+_TODO: Add your screensaver descriptions!!!_
 
-_[Your description of screensaver 1]_
+## Demo video
 
-### SS 2 
-
-_[And so on]_
-
-## Demo URL
-
+_TODO: Add your video URL here!!!_
