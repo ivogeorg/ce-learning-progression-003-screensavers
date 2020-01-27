@@ -6,17 +6,27 @@ This is the third assignment for the Spring 2020 installment of the CPE 1040 - I
 
 ### Overview
 
-This assignnment is more involved than the first two, but uses the same basic micro:bit functions. With some upfront design and several iterations of the implementation, it is within any student who has completed the previous two assignments. It asks you to create 5 "screensavers" for the micro:bit's 25 LED matrix. The screensavers are moving patterns of lights that are displayed when the micro:bit is "put to sleep" and until it is "woken up".
+This assignnment is more involved than the first two, but uses the same basic micro:bit functions. With some upfront design and several iterations of the implementation, it is within any student who has completed the previous two assignments. It asks you to create 5 "screensavers" for the micro:bit's 5x5 LED array (aka 25-LED matrix). The screensavers are moving patterns of lights that are displayed when the micro:bit is "put to sleep" and until it is "woken up".
 
 ### Requirements
 
-#### 1. Summary
+#### 1. Modes
 
-This assignment asks you to design a program and implement it in micro:bit JavaScript (that is, TypeScript) from scratch. **No Blocks!** This assignment is submitted through Github.
+1. The program should have two modes, _asleep_ and _working_. It should do different things in the different modes.
 
-### 2. Requirements
+2. Use a conditional (aka _boolean_) variable to track the mode.
 
-#### 2.1 "Screensavers"
+3. In the _asleep_ mode, the micro:bit should show a "screensaver". In the _working_ mode, it should at least scroll a sentence of your choosing, or optionally do something more sophisticated.
+
+#### 2. Controls
+
+1. Use the A button to "put the screen to sleep" (that is, put the program in the _asleep_ state, activating the "screensaver").
+
+2. Use the B button to "wake the screen up" (that is, put the program in the _working_ state).
+
+3. **CHALLENGE:** Require that the A button is _held down_ for 2 seconds to activate the "screensaver", instead of just being pressed and released. _Hint: You need to use the `buttonIsPressed` and the timing functionality of the micro:bit._
+
+#### 3. "Screensavers"
 
 1. Design 5 abstract, randomized, moving patterns for the 5x5 LED array. Some ideas:
    1. Rotating "lines" like | / - \ | / -, that are centered at different spots.
@@ -25,39 +35,31 @@ This assignment asks you to design a program and implement it in micro:bit JavaS
    4. Concentric version of the gradient waves.
    5. **BONUS:** For the most original and unexpected "screensaver" pattern.
    
-2. Make sure you can control which one is displayed. It's a good idea to wrap them in functions.
+2. Make sure you can control which one is displayed. It's a good idea to wrap them in separate functions with descriptive names.
 
 3. **BONUS:** Write a Screensaver class for the micro:bit.
 
-4. The "screensaver" should time out and the "screen" should go blank.
+4. The "screensaver" should time out and the "screen" should go blank. This does not automatically change the mode to _working_.
 
-#### 2.2 Controls
+#### 4. Gestures
 
-1. Use the A button to "put the screen to sleep" (that is, activate the "screensaver").
+1. Pick 5 gestures to correspond to your 5 screensavers. When the micro:bit is _asleep_ and detects a gesture, it should switch to the corresponding "screensaver". This does not automatically change the mode to _working_.
 
-2. Use the B button to "wake the screen up". When the micro:bit is awake, the 5x5 LED matrix should just scroll some sentence of your choosing.
+2. The gestures should work _only_ when the "screensaver" is on (hat is, if the micro:bit is in the _working_ mode, the gestures should not do anything).
 
-3. **BONUS:** Require that the A button is _held down_ for 2 seconds to activate the "screensaver".
+#### 5. Program versions
 
-#### 2.3 Gestures
+1. In the previous assignments, you only copy over your source code to your Github repository once, when you are done with the program. With larger programs, it is better to work in stages, and commit your current progress (usually, a partially completed program) to Github often. As Github is based on the version control system program Git (hence Github :)), you will have copies of all your different versions.
 
-1. Pick 5 gestures to correspond to your 5 "screensavers". When the micro:bit detects a gesture, it should switch to the corresponding "screensaver".
+2. A suggested progression for the development of your program can be:
+   1. Two different modes, changed by pressing buttons A and B. In this version, you can display two different icons to show in which mode you are.
+   2. TODO
 
-2. The gestures should work _only_ when the "screensaver" is on.
-
-#### 2.4 Github commits
-
-1. Feel free to work in MakeCode, as long as you only write JavaScript. 
-
-2. Copy your program file from Makecode to the open JS file in your remote repository on Github. The first time around, it will be a new file. Subsequently, overwrite the contents with the updated program. Github will be able to show you the differences between commits, because it does it on the fly and based on textual comparison.
-
-3. Commit often, and include informative messages.
-
-#### 2.5 README
+#### 6. README
 
 1. Each time you design a new "screensaver", describe it in the [screensavers](#screensavers) section of the README.
 
-#### 2.6 Demo video
+#### 7. Demo video
 
 1. Record a short video with your phone of your "screensavers" changing from gesture to gesture.
 
