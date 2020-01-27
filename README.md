@@ -26,7 +26,7 @@ This assignnment is more involved than the first two, but uses the same basic mi
 
 3. **CHALLENGE:** Require that the A button is _held down_ for 2 seconds to activate the "screensaver", instead of just being pressed and released. _Hint: You need to use the `buttonIsPressed` and the timing functionality of the micro:bit._
 
-#### 3. "Screensavers"
+#### 3. Screensavers
 
 1. Design 5 abstract, randomized, moving patterns for the 5x5 LED array. Some ideas:
    1. Rotating "lines" like | / - \ | / -, that are centered at different spots.
@@ -84,7 +84,7 @@ This assignnment is more involved than the first two, but uses the same basic mi
 
 3. A list of some more [advanced projects](https://www.itpro.co.uk/desktop-hardware/26289/13-top-bbc-micro-bit-projects).
 
-4. The [projects](https://www.itpro.co.uk/desktop-hardware/26289/13-top-bbc-micro-bit-projects) at the [awesome micro:bit list](https://github.com/carlosperate/awesome-microbit).
+4. The [projects](https://github.com/carlosperate/awesome-microbit#%EF%B8%8F-projects) at the [awesome micro:bit list](https://github.com/carlosperate/awesome-microbit).
 
 ### Github
 
@@ -106,10 +106,10 @@ This assignnment is more involved than the first two, but uses the same basic mi
 
 1. Technically, the language which is used side-by-side with Blocks in the Makecode environment is a subset of [TypeScript](https://makecode.com/language), which itself is a superset of JavaScript (technically, [ECMAScript](https://www.ecma-international.org/ecma-262/10.0/index.html#Title)), with some JS features not implemented in Makecode.
 
-2. The limited [JavaScript mini-tutorial](https://makecode.microbit.org/javascript) in Makecode. Make sure you read it but that can't be your only reference.
+2. The limited [JavaScript mini-tutorial](https://makecode.microbit.org/javascript) in Makecode.
 
-3. Official [TypeScript documentation]():
-   1. TypeScript in 5 min [tutorial](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html). _**Highly recommended!** You will need to [download](https://www.typescriptlang.org/index.html#download-links) and install an integrated development envinronment (IDE). The two that I recommend are Visual Studio Code from Microsoft and WebStorm from JetBrains._
+3. Official [TypeScript documentation](https://www.typescriptlang.org/docs/home.html):
+   1. TypeScript in 5 min [tutorial](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html). _Note: You will need to [download](https://www.typescriptlang.org/index.html#download-links) and install an integrated development envinronment (IDE). The two that I recommend are Visual Studio Code from Microsoft and WebStorm from JetBrains._
    2. The full documentation and reference is under _Handbook_. Bear in mind that you are drinking from the hose. Don't be surprised if not everything is presented in a strictly incremental manner.
    
 4. In-browser TypeScript [playground](https://www.typescriptlang.org/play/index.html). Note that micro:bit specific code will not run, but you can still play. _Start making the distinction between a generic multi-purpose programming language (TypeScript) and functionality (packages, libraries, objects, etc.) that is specific to a particular device (micro:bit), though written in the same programming language._
