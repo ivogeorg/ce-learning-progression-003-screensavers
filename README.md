@@ -86,6 +86,8 @@ This assignnment is more involved than the first two, but uses the same basic mi
 
 4. The [projects](https://github.com/carlosperate/awesome-microbit#%EF%B8%8F-projects) at the [awesome micro:bit list](https://github.com/carlosperate/awesome-microbit).
 
+5. micro:bit [technical documentation](https://tech.microbit.org/).
+
 ### Github
 
 1. Github Tutorial for Beginners ([webpage](https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners)).
