@@ -4,6 +4,13 @@
 
 Topics:
 - random behavior  
+- divide & conquer: program "modes"  
+- incremental development + a closer look at Github  
+- encapsulation redus: functions vs classes   
+- classes redux: [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
+- multidimensional arrays  
+- JS vs TS  
+- "rain" at 45°
 
 ### Step 1: 
 
