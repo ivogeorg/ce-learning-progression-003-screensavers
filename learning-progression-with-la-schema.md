@@ -14,7 +14,10 @@ Topics:
 - classes redux: [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
 - multidimensional arrays  
 - JS vs TS  
-- target: "rain" at 45°
+- target: 
+  - "rain" at 45°  
+  - fireworks  
+  - selection from the best ones from last semesters  
 
 ### Step 1: 
 
