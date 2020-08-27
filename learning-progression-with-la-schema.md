@@ -5,6 +5,18 @@
 Topics:
 - random behavior  
 - `forever` function vs `while (true)` loop
+  - this code requires a `pause` after `clearScreen`:
+    ```javascript
+    while (true) {
+        if (isHeart)                                             
+            basic.showIcon(IconNames.Heart)
+        else
+            basic.showIcon(IconNames.Butterfly)
+        basic.pause(100)
+        basic.clearScreen()
+        basic.pause(100)                             // THIS IS REQUIRED TO SEE THE ICON BLINK
+    }
+    ```
   - [reactive system](https://makecode.microbit.org/device/reactive)  
   - [software stack revisited](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
   - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
