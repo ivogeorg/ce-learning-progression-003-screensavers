@@ -18,6 +18,7 @@ Topics:
   - "rain" at 45°  
   - fireworks  
   - selection from the best ones from last semesters  
+- namespaces (`basic`, `input`, etc.)
 
 ### Step 1: 
 
