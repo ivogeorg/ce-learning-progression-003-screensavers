@@ -20,7 +20,10 @@ Topics:
   - [reactive system](https://makecode.microbit.org/device/reactive)  
   - [software stack revisited](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
   - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
+  - (Brendan) Does a time slice have to end for event handling to proceed?  
+  - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)
 - divide & conquer: program "modes"  
+- why you shouldn't have event handling in a `forever` loop  
 - incremental development + a closer look at Github  
 - encapsulation redus: functions vs classes   
 - classes redux: [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
@@ -28,7 +31,8 @@ Topics:
 - JS vs TS  
 - target: 
   - "rain" at 45°  
-  - fireworks  
+  - fireworks (Dwight)  
+  - snake (Brendan)
   - selection from the best ones from last semesters  
 - namespaces (`basic`, `input`, etc.)
 
