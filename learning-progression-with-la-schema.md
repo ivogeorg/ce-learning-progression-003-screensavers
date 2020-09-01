@@ -5,6 +5,20 @@
 Topics:
 - random behavior  
 - pass by value, pass by reference
+  ```javascript
+  let arr : number[] = [1, 2, 3]
+
+  function double(a : number[]) {
+     for (let i = 0; i < arr.length; i ++)
+         a[i] *= 2
+  }
+
+  double(arr)
+
+  arr.forEach(function (value: number, index: number) {
+      basic.showNumber(value)    
+  })
+  ```
 - `forever` function vs `while (true)` loop
   - this code requires a `pause` after `clearScreen`:
     ```javascript
