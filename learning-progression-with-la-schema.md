@@ -4,6 +4,7 @@
 
 Topics:
 - random behavior  
+- pass by value, pass by reference
 - `forever` function vs `while (true)` loop
   - this code requires a `pause` after `clearScreen`:
     ```javascript
