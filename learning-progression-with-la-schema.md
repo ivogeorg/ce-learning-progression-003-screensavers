@@ -4,6 +4,7 @@
 
 Topics:
 - random behavior  
+- stack frames: here or further along the curriculum (if so, where?)
 - pass by value, pass by reference
   ```javascript
   let arr : number[] = [1, 2, 3]
