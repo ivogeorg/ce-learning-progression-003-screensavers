@@ -2,25 +2,26 @@
 
 ## Learning Progression 003: Screensavers
 
-Topics:
-- random behavior  
-- stack frames: here or further along the curriculum (if so, where?)
-- pass by value, pass by reference
-  ```javascript
-  let arr : number[] = [1, 2, 3]
+### Topics
 
-  function double(a : number[]) {
-     for (let i = 0; i < arr.length; i ++)
-         a[i] *= 2
-  }
+1. random(ized) behavior  
+2. stack frames: here or further along the curriculum (if so, where?)  
+3. pass by value, pass by reference  
+   ```javascript
+   let arr : number[] = [1, 2, 3]
 
-  double(arr)
+   function double(a : number[]) {
+      for (let i = 0; i < arr.length; i ++)
+          a[i] *= 2
+   }
 
-  arr.forEach(function (value: number, index: number) {
-      basic.showNumber(value)    
-  })
-  ```
-- `forever` function vs `while (true)` loop
+   double(arr)
+
+   arr.forEach(function (value: number, index: number) {
+       basic.showNumber(value)    
+   })
+   ```
+4. `forever` function vs `while (true)` loop  
   - this code requires a `pause` after `clearScreen`:
     ```javascript
     while (true) {
@@ -38,19 +39,25 @@ Topics:
   - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
   - (Brendan) Does a time slice have to end for event handling to proceed?  
   - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)
-- divide & conquer: program "modes"  
-- why you shouldn't have event handling in a `forever` loop  
-- incremental development + a closer look at Github  
-- encapsulation redus: functions vs classes   
-- classes redux: [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
-- multidimensional arrays  
-- JS vs TS  
-- target: 
+5. divide & conquer: program "modes"  
+6. why you shouldn't have event handling in a `forever` loop  
+7. incremental development + a closer look at Github  
+8. encapsulation redux:  
+  - functions vs classes   
+  - in JS, classes are functions under the hood  
+  - [Static TS](https://www.microsoft.com/en-us/research/publication/static-typescript/)   
+  - JS vs TS  
+9. classes redux:  
+  - [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
+10. multidimensional arrays   
+11. target:   
   - "rain" at 45°  
   - fireworks (Dwight)  
   - snake (Brendan)
   - selection from the best ones from last semesters  
-- namespaces (`basic`, `input`, etc.)
+12. namespaces (`basic`, `input`, etc.)  
+13. memory layout?  
+
 
 ### Step 1: 
 
