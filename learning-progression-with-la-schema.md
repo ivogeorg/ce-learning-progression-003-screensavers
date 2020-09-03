@@ -4,9 +4,9 @@
 
 ### Topics
 
-1. random(ized) behavior  
-2. stack frames: here or further along the curriculum (if so, where?)  
-3. pass by value, pass by reference  
+1. Random(ized) behavior  
+2. Stack frames: here or further along the curriculum (if so, where?)  
+3. Pass by value, pass by reference  
    ```javascript
    let arr : number[] = [1, 2, 3]
 
@@ -39,10 +39,10 @@
   - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
   - (Brendan) Does a time slice have to end for event handling to proceed?  
   - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)
-5. divide & conquer: program "modes"  
-6. why you shouldn't have event handling in a `forever` loop  
-7. incremental development + a closer look at Github  
-8. encapsulation redux:  
+5. Divide & conquer: program "modes"  
+6. Why you shouldn't have event handling in a `forever` loop  
+7. Incremental development + a closer look at Github  
+8. Encapsulation revisited  
   - functions vs classes   
   - in JS, classes are functions under the hood  
   - [Static TS](https://www.microsoft.com/en-us/research/publication/static-typescript/)   
@@ -59,9 +59,10 @@
   - snake (Brendan)  
   - frequency bar (Ivo)  
   - selection from the best ones from last semesters  
-12. namespaces (`basic`, `input`, etc.)  
-13. memory layout?  
-
+12. Namespaces (`basic`, `input`, etc.)  
+13. Memory layout?  
+14. Algorithms  
+    - sorting   
 
 ### Step 1: 
 
