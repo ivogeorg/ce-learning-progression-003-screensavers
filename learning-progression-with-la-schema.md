@@ -5,7 +5,7 @@
 ### Topics
 
 1. Random(ized) behavior  
-2. Stack frames: here or further along the curriculum (if so, where?)  
+2. Program structure   
 3. Pass by value, pass by reference  
    ```javascript
    let arr : number[] = [1, 2, 3]
@@ -63,6 +63,9 @@
 13. Memory layout?  
 14. Algorithms  
     - sorting   
+    
+### For later LP
+1. Stack frames: here or further along the curriculum (if so, where?)   
 
 ### Step 1: 
 
