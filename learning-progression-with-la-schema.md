@@ -47,17 +47,22 @@
   - in JS, classes are functions under the hood  
   - [Static TS](https://www.microsoft.com/en-us/research/publication/static-typescript/)   
   - JS vs TS  
-9. classes redux:  
+9. more on classes:  
   - [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
+  - object properties  
+  - object literals: objects as dictionaries  
 10. Arrays revisited  
     - Multidimensional arrays   
     - Matching gestures with screensavers ([gist](https://gist.github.com/ivogeorg/efa6747383323654b3556e3c3470efa6))   
 11. Target ([gists](https://gist.github.com/ivogeorg)):   
   - "rain" at 45° (Ivo)   
-  - fireworks (Dwight?)  
+  - fireworks (Dwight)  
+    - need to add the pre-explosion arc  
   - bouncy ball (Dwight)  
   - snake (Brendan)  
   - frequency bar (Ivo)  
+  - pond ripples  
+    - reflection and fading at the walls  
   - selection from the best ones from last semesters  
 12. Namespaces (`basic`, `input`, etc.)  
 13. Memory layout?  
