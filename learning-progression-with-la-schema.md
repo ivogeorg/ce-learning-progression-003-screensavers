@@ -59,11 +59,11 @@
 11. Target ([gists](https://gist.github.com/ivogeorg)):   
   - "rain" (Ivo)  
     - challenge: rain at 45°
-  - fireworks (Dwight)  
+  - [fireworks](https://github.com/Introduction-to-Computer-Engineering/screensavers-for-the-micro-bit-AKA-turtle/blob/master/screensaver.js) (Dwight)  
     - need to add the pre-explosion arc  
   - bouncy ball (Dwight)  
     - challenge: change the "bouncing" coefficient of the ball  
-  - snake (Brendan)  
+  - [snake](https://github.com/iconoptic/snake-microbit/blob/master/snake.js) (Brendan)  
   - frequency bar (Ivo)  
   - pond ripples  
     - reflection and fading at the walls  
@@ -74,6 +74,7 @@
 2. [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
 3. Memory layout.  
 4. Data structures, abstract data types, and algorithms:  
+   - [data structures vs ADTs](https://www.google.com/search?q=data+structure+vs+abstract+data+type&oq=data+structure+vs+&aqs=chrome.0.0l2j69i57j0l5.4669j0j7&sourceid=chrome&ie=UTF-8)  
    - array, linked-list, map (dictionary, hash table), tree   
    - stack, queue  
    - sorting  
