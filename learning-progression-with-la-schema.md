@@ -31,6 +31,8 @@
     - Matching gestures with screensavers ([gist](https://gist.github.com/ivogeorg/efa6747383323654b3556e3c3470efa6))   
 4. Namespaces (`basic`, `input`, etc.)  
    - Code reading: https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts  
+   - micro:bit [tech docs](https://makecode.com/docs)  
+   - TS [namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)  
 5. Reactive system  
    - [reactive system](https://makecode.microbit.org/device/reactive)  
    - [software stack revisited](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
