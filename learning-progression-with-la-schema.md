@@ -5,13 +5,13 @@
 ### Topics
 
 1. Encapsulation revisited  
-  - functions vs classes   
-  - in JS, classes are functions under the hood  
-  - [Static TS](https://www.microsoft.com/en-us/research/publication/static-typescript/)   
-  - JS vs TS  
+   - functions vs classes   
+   - in JS, classes are functions under the hood  
+   - [Static TS](https://www.microsoft.com/en-us/research/publication/static-typescript/)   
+   - JS vs TS  
 2. more on classes:  
-  - object properties  
-  - object literals: objects as dictionaries  
+   - object properties  
+   - object literals: objects as dictionaries  
 3. Pass by value, pass by reference  
    ```javascript
    let arr : number[] = [1, 2, 3]
@@ -31,6 +31,11 @@
     - Matching gestures with screensavers ([gist](https://gist.github.com/ivogeorg/efa6747383323654b3556e3c3470efa6))   
 4. Namespaces (`basic`, `input`, etc.)  
    - Code reading: https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts  
+     - export  
+     - functions (`createSprite`)  
+     - classes (`LedSprite`)  
+     - namespaces (`game`)  
+     - use of variables  
    - micro:bit [tech docs](https://makecode.com/docs)  
    - TS [namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)  
 5. Reactive system  
@@ -41,36 +46,47 @@
    - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)
 6. Why you shouldn't have event handling in a `forever` loop  
 7. `forever` function vs `while (true)` loop  
-  - this code requires a `pause` after `clearScreen`:
-    ```javascript
-    while (true) {
-        if (isHeart)                                             
-            basic.showIcon(IconNames.Heart)
-        else
-            basic.showIcon(IconNames.Butterfly)
-        basic.pause(100)
-        basic.clearScreen()
-        basic.pause(100)                             // THIS IS REQUIRED TO SEE THE ICON BLINK
-    }
-    ```
-8. Program structure   
+   - this code requires a `pause` after `clearScreen`:
+     ```javascript
+     while (true) {
+         if (isHeart)                                             
+             basic.showIcon(IconNames.Heart)
+         else
+             basic.showIcon(IconNames.Butterfly)
+         basic.pause(100)
+         basic.clearScreen()
+         basic.pause(100)                             // THIS IS REQUIRED TO SEE THE ICON BLINK
+     }
+     ```
+8. Program structure  
+   - global vars  
+   - function and class declarations  
+   - event handlers  
+   - forever loops  
 9. Divide & conquer: program decomposition:  
    - 2 "modes": working and asleep  
    - code writing in working mode  
    - 5 gestures for five screensavers in asleep mode  
 10. Incremental development + a closer look at Github  
+    - status, add, commit, pull, push  
+    - remote & local (git SCM)  
+    - Github workflow (pull requests, Github Classroom **Feedback**)  
+    - informative commit messages  
+    - releases & tags  
+    - incremental development example
 11. Random(ized) behavior  
 12. Target ([gists](https://gist.github.com/ivogeorg)):   
-  - "rain" (Ivo)  
-    - challenge: rain at 45°
-  - [fireworks](https://github.com/Introduction-to-Computer-Engineering/screensavers-for-the-micro-bit-AKA-turtle/blob/master/screensaver.js) (Dwight)  
-    - need to add the pre-explosion arc  
-  - bouncy ball (Dwight)  
-    - challenge: change the "bouncing" coefficient of the ball  
-  - [snake](https://github.com/iconoptic/snake-microbit/blob/master/snake.js) (Brendan)  
-  - frequency bar (Ivo)  
-  - pond ripples  
-    - reflection and fading at the walls  
+    - "rain" (Ivo)  
+      - challenge: rain at 45°
+    - [fireworks](https://github.com/Introduction-to-Computer-Engineering/screensavers-for-the-micro-bit-AKA-turtle/blob/master/screensaver.js) (Dwight)  
+      - challenge: pre-explosion arc  
+    - bouncy ball (Dwight)  
+      - challenge: change the "bouncing" coefficient of the ball  
+    - [snake](https://github.com/iconoptic/snake-microbit/blob/master/snake.js) (Brendan)  
+    - frequency bar (Ivo)
+      - challenge: 
+    - pond ripples  
+      - challenge: reflection and fading at the walls  
     
 ### For later LP
 1. Stack frames: here or further along the curriculum (if so, where?)   
