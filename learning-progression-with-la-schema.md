@@ -67,9 +67,11 @@
    - event handlers  
    - forever loops  
 10. Divide & conquer: program decomposition:  
-    - 2 "modes": working and asleep  
-    - code writing in working mode  
-    - 5 gestures for five screensavers in asleep mode  
+    - high-level program structure:  
+      - 2 "modes": working and asleep  
+      - code writing in working mode  
+      - 5 gestures for five screensavers in asleep mode  
+    - analysis and decomposition of target programs   
 11. Incremental development + a closer look at Github  
     - status, add, commit, pull, push  
     - remote & local (git SCM)  
@@ -84,6 +86,7 @@
     - [fireworks](https://github.com/Introduction-to-Computer-Engineering/screensavers-for-the-micro-bit-AKA-turtle/blob/master/screensaver.js) (Dwight)  
       - challenge: pre-explosion arc  
     - bouncy ball (Dwight)  
+      - should add horizontal motion? => too short a path, unless we bounce off the walls  
       - challenge: change the "bouncing" coefficient of the ball  
     - [snake](https://github.com/iconoptic/snake-microbit/blob/master/snake.js) (Brendan)  
     - frequency bar (Ivo)
@@ -91,6 +94,7 @@
     - pond ripples  
       - challenge: reflection and fading at the walls  
     
+
 ### For later LP
 1. Stack frames: here or further along the curriculum (if so, where?)   
 2. [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
