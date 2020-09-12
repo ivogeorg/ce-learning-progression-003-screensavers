@@ -105,7 +105,13 @@
     - pond ripples  
       - challenge: reflection and fading at the walls  
 11. Matrix dynamics  
+    - can use out-of-bound coordinates in `plot()` and `unplot()`  
+    - don't use `pause()`, `show*()`, or `clearScreen()` for smooth graphics  
+    - _frame_-based display for speed and smoothness  
 12. Randomized behavior  
+    - dimensions of randomization  
+    - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
+    - write your own custom randomization routines  
 
 
 ### For later LP
