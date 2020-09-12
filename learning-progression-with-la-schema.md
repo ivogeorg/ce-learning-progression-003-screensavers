@@ -90,6 +90,8 @@
    - releases & tags  
    - incremental development example
 10. Screensavers ([gists](https://gist.github.com/ivogeorg)):   
+    - code writing simulation in work mode  
+      - challenge: scroll up the already written text, adding one line at a time, except the first 4  
     - "rain" (Ivo)  
       - challenge: rain at 45°
     - [fireworks](https://github.com/Introduction-to-Computer-Engineering/screensavers-for-the-micro-bit-AKA-turtle/blob/master/screensaver.js) (Dwight)  
