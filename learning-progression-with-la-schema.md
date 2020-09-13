@@ -4,6 +4,8 @@
 
 ### Topics
 
+_Note: Rearrangement and composition in [progression notes](progression-notes.md)._
+
 1. Encapsulation    
    - the benefits of encapsulation  
    - functions
