@@ -12,15 +12,24 @@ _Note: Composition and target-program learning curve in [progression notes](prog
    - "rain" (Ivo)  
      - challenge: rain at 45°
    - [fireworks](https://github.com/Introduction-to-Computer-Engineering/screensavers-for-the-micro-bit-AKA-turtle/blob/master/screensaver.js) (Dwight)  
+     - TODO:
+       - simplify code  
+       - have radial burst with dynamics  
      - challenge: pre-explosion arc  
    - bouncy ball (Dwight)  
      - should add horizontal motion? => too short a path, unless we bounce off the walls  
      - challenge: change the "bouncing" coefficient of the ball  
    - [snake](https://github.com/iconoptic/snake-microbit/blob/master/snake.js) (Brendan)  
+     - TODO:
+       - simplify logic & code  
+       - relate to LP002 snake  
    - frequency bar (Ivo)
-     - challenge: smooth out  
+     - challenge: smooth out, as in a real piece of music    
    - pond ripples  
-     - challenge: reflection and fading at the walls  
+     - TODO:
+       - fading away from drop splash point  
+       - interference patterns with brightness  
+     - challenge: reflection and further fading at the walls  
 2. Program structure  
    - global vars  
    - function and class declarations  
