@@ -6,7 +6,11 @@
 
 _Note: Composition and target-program learning curve in [progression notes](progression-notes.md)._
 
-1. Screensavers ([gists](https://gist.github.com/ivogeorg)):   
+1. Arrays revisited  
+    - array methods  
+    - Multidimensional arrays   
+    - Matching gestures with screensavers ([gist](https://gist.github.com/ivogeorg/efa6747383323654b3556e3c3470efa6))   
+2. Screensavers ([gists](https://gist.github.com/ivogeorg)):   
    - code writing simulation in work mode  
      - challenge: scroll up the already written text, adding one line at a time, except the first 4  
    - "rain" (Ivo)  
@@ -30,23 +34,23 @@ _Note: Composition and target-program learning curve in [progression notes](prog
        - fading away from drop splash point  
        - interference patterns with brightness  
      - challenge: reflection and further fading at the walls  
-2. Program structure  
+3. Program structure  
    - global vars  
    - function and class declarations  
    - event handlers  
    - forever loops  
-3. Divide & conquer: program decomposition:  
+4. Divide & conquer: program decomposition:  
    - high-level program structure:  
      - 2 "modes": working and asleep  
      - code writing in working mode  
      - 5 gestures for five screensavers in asleep mode  
    - analysis and decomposition of target programs   
-4. Encapsulation    
+5. Encapsulation    
    - the benefits of encapsulation  
    - functions
    - classes   
    - namespaces (`basic`, `input`, `game`, etc.)    
-5. Functions revisited  
+6. Functions revisited  
    - Pass by value, pass by reference  
      ```javascript
      let arr : number[] = [1, 2, 3]
@@ -66,7 +70,7 @@ _Note: Composition and target-program learning curve in [progression notes](prog
      - return a value  
      - return a modified argument  
      - change in place  
-6. Classes revisited    
+7. Classes revisited    
    - object properties  
    - object literals: objects as dictionaries  
    - in JS, [classes are functions under the hood](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)  
@@ -74,18 +78,7 @@ _Note: Composition and target-program learning curve in [progression notes](prog
      - [Static TS](https://www.microsoft.com/en-us/research/publication/static-typescript/) implementation  
      - prototypes (too much)  
      - JS vs TS  
-7. Iterative development with Github  
-   - status, add, commit, pull, push  
-   - remote & local (git SCM)  
-   - Github workflow (pull requests, Github Classroom **Feedback**)  
-   - informative commit messages  
-   - releases & tags  
-   - incremental development example
-8. Arrays revisited  
-    - array methods  
-    - Multidimensional arrays   
-    - Matching gestures with screensavers ([gist](https://gist.github.com/ivogeorg/efa6747383323654b3556e3c3470efa6))   
-9. Code reading: https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts  
+8. Code reading: https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts  
    - export  
    - functions (`createSprite`)  
    - classes (`LedSprite`)  
@@ -94,6 +87,13 @@ _Note: Composition and target-program learning curve in [progression notes](prog
    - TODO:
      - micro:bit [tech docs](https://makecode.com/docs)  
      - TS [namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)  
+9. Iterative development with Github  
+   - status, add, commit, pull, push  
+   - remote & local (git SCM)  
+   - Github workflow (pull requests, Github Classroom **Feedback**)  
+   - informative commit messages  
+   - releases & tags  
+   - incremental development example
 10. Reactive sysem  
     - [reactive system](https://makecode.microbit.org/device/reactive)  
       - [software stack revisited](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
