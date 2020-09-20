@@ -99,7 +99,7 @@ _Note: Composition and target-program learning curve in [progression notes](prog
       - [software stack revisited](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
       - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
       - (Brendan) Does a time slice have to end for event handling to proceed?  
-    - `forever` function vs `while (true)` loop  
+    - `forever` function vs `while` loop  
       feature | `forever` | `while`
       -- | -- | --
       condition | no | yes
