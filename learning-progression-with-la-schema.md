@@ -100,18 +100,11 @@ _Note: Composition and target-program learning curve in [progression notes](prog
       - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
       - (Brendan) Does a time slice have to end for event handling to proceed?  
     - `forever` function vs `while (true)` loop  
-      - this code requires a `pause` after `clearScreen`:
-        ```javascript
-        while (true) {
-            if (isHeart)                                             
-                basic.showIcon(IconNames.Heart)
-            else
-                basic.showIcon(IconNames.Butterfly)
-            basic.pause(100)
-            basic.clearScreen()
-            basic.pause(100)                             // THIS IS REQUIRED TO SEE THE ICON BLINK
-        }
-        ```
+      feature | `forever` | `while`
+      -- | -- | --
+      condition | no | yes
+      `break` | no | yes
+      scheduling | yes | no
     - Why you shouldn't have event handling in a `forever` loop  
     - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)  
       - `pause()` should be avoided, especially with multiple `forever()` loops  
@@ -119,6 +112,18 @@ _Note: Composition and target-program learning curve in [progression notes](prog
     - can use out-of-bound coordinates in `plot()` and `unplot()`  
     - don't use `pause()`, `show*()`, or `clearScreen()` for smooth graphics  
     - _frame_-based display for speed and smoothness  
+    - `pause()` after `clearScreen()`???
+      ```javascript
+      while (true) {
+          if (isHeart)                                             
+              basic.showIcon(IconNames.Heart)
+          else
+              basic.showIcon(IconNames.Butterfly)
+          basic.pause(100)
+          basic.clearScreen()
+          basic.pause(100)                             // THIS IS REQUIRED TO SEE THE ICON BLINK
+      }
+      ```
 12. Randomized behavior  
     - dimensions of randomization  
     - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
