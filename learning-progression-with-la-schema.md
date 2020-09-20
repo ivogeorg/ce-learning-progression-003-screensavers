@@ -110,9 +110,9 @@ _Note: Composition and target-program learning curve in [progression notes](prog
       - `pause()` should be avoided, especially with multiple `forever()` loops  
 11. Matrix dynamics  
     - can use out-of-bound coordinates in `plot()` and `unplot()`  
-    - don't use `pause()`, `show*()`, or `clearScreen()` for smooth graphics  
-    - _frame_-based display for speed and smoothness  
-    - `pause()` after `clearScreen()`???
+    - don't use `pause()`, `show*()` for smooth graphics 
+    - `clearScreen()` is often necessary but it's fast, so no problem  
+    - why do we need `pause()` after `clearScreen()`?
       ```javascript
       while (true) {
           if (isHeart)                                             
@@ -124,6 +124,7 @@ _Note: Composition and target-program learning curve in [progression notes](prog
           basic.pause(100)                             // THIS IS REQUIRED TO SEE THE ICON BLINK
       }
       ```
+    - _frame_-based display for speed and smoothness  
 12. Randomized behavior  
     - dimensions of randomization  
     - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
