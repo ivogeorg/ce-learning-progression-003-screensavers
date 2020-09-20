@@ -96,9 +96,6 @@ _Note: Composition and target-program learning curve in [progression notes](prog
    - incremental development example
 10. Reactive sysem  
     - [reactive system](https://makecode.microbit.org/device/reactive)  
-      - [software stack revisited](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
-      - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
-      - (Brendan) Does a time slice have to end for event handling to proceed?  
     - `forever` function vs `while` loop  
       feature | `forever` | `while`
       -- | -- | --
@@ -108,6 +105,10 @@ _Note: Composition and target-program learning curve in [progression notes](prog
     - Why you shouldn't have event handling in a `forever` loop  
     - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)  
       - `pause()` should be avoided, especially with multiple `forever()` loops  
+    - Advanced material: [software stack](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
+      - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
+      - issues of speed, memory, etc.  
+      - (Brendan) Does a time slice have to end for event handling to proceed?  
 11. Matrix dynamics  
     - can use out-of-bound coordinates in `plot()` and `unplot()`  
     - don't use `pause()`, `show*()` for smooth graphics 
