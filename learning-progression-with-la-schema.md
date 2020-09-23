@@ -69,6 +69,7 @@ Now, let's look at the available methods systematically, grouping them by genera
    - `fill()` Read the JS documentation on its [usage](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill).)  
    - `shift()` remove an element from the beginning of the array and return the new length.  
    - `unshift()` add an element at the beginning of the array and return the new length.  
+   - `splice()` removes a number of elements from an array, starting at an index.  
    ```javascript
    // Example 1.1.3
    let a : number[] = [5, 8, 12, 91, 41, 0, 22]
@@ -96,31 +97,72 @@ Now, let's look at the available methods systematically, grouping them by genera
 2. Accessor methods:
    - `get()` return the value of the element at an index. `a.get(5)` is equivalent to `a[5]`.  
    - `indexOf()` returns the index of an element, if found, or `-1`, if not found.  
+   - `find()` returns the value of the first element in the array that satisfies the boolean criterion function passed as argument.  
+   - `slice()` returns a section of an array between two indices as another array.  
    ```javascript
    // Example 1.1.4
    let a : number[] = [5, 8, 12, 91, 41, 0, 22]
    basic.showNumber(a.indexOf(91))  // returns 3
+   
    basic.showNumber(a.indexOf(87))  // returns -1 (no 87 in the array)
+   
+   function odd(a : number, index : number) { return a % 2 == 1 }  // the second parameter is required though not used
+   basic.showNumber(a.find(odd))
+   
+   let c = a.slice(2, 5)  // the end index, here 5, is not included
+   showNumericArray(c)
    ```
 3. Order methods, which change the order of the elements:
    - `reverse()` permanently reverses the order of the elements of the array on which it was called.  
-   - `sort()` returns the sorted array.  
+   - `sort()` returns the array sorted `[<cept>]`_in place_, meaning the array remains sorted after the call. `reverse()` is also in-place.    
    ```javascript
    // Example 1.1.5
+   
    let a : number[] = [5, 8, 12, 91, 41, 0, 22]
    a.reverse()
    showNumericArray(a)
-   showNumericArray(a.sort())   
+   showNumericArray(a.sort())  // note that the array a is now sorted
    ```
 4. Methods on two arrays:
    - `concat()` returns a new array with the argument array concatenated (that is, appended) to the array on which it was called.  
    ```javascript
    // Example 1.1.6
+   
    let a : number[] = [5, 8, 12]
    let b : number[] = a.concat([91, 41, 0, 22])
    showNumericArray(b)
    ```
-5. 
+5. String-specific methods:
+   - `join()`, for `string` arrays, concatenates the elements, delimited by a `[<cept>]`_separator_.  
+   ```javascript
+   // Example 1.1.7
+
+   let a : string[] = ["Learning", "progression", "003"]
+   showStringArray(b)
+   basic.showString(a.join(" "))  // the separator is a space (that is, " ")
+   ```
+6. Boolean methods:
+   - `every()` tests of all elements satisfy a criterion specified as a funciton.   
+   - `some()` tests of all elements satisfy a criterion specified as a funciton.  
+   ```javascript
+   // Example 1.1.8
+
+   let a : number[] = [5, 8, 12]
+
+   function odd(a : number, index : number) { return a % 2 == 1 }  // the second parameter is required though not used
+   function even(a : number, index : number) { return a % 2 == 0 }  // the second parameter is required though not used
+
+   if (a.every(odd))
+      basic.showString("All odd!")
+   else if (a.every(even))
+      basic.showString("All even!")
+   else
+      basic.showString("Even and odd!")
+   ```
+7. Methods applying a `[<cept>]` callback function on every element. (Notice that `find()`, `every()`, and `some()` also take callbacks as arguments.)
+   - `map()`  
+   - `forEach()`  
+   - `reduce()`  
 
    
    
