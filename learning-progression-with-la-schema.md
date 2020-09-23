@@ -31,9 +31,18 @@ As we can see, the `[]` operator is used heavily with arrays. In fact, that's ho
 2. In `let favoritePrime...`, it selects a particular element of the array, in this case the one with index 3, making it the forth element. Note that the array index always starts at 0.  
 3. In `firstPrimes[i]`, it picks out the element, the index of which is equal to the current value of the loop variable `i`. So, the `[]` operator admits `[<cept>]`_expressions_ between the brackets, as long as they evaluate to an `[<cept>]`_integer_ value. That is, the result of evaluating the expression has to be a whole number. In addition, the integer has to be in the index `[<cept>]`_range_ of the array. That is, the number between the brackets has to be among the valid indices of the array. In our case, the range is [0, 9].  
 
-The usefulness of the arrays doesn't stop with the ability to keep a collection of data together. Arrays come with many useful `[<cept>]`_methods_ and `[<cept>]`_properties_ for manipulating the elements of the collection or the whole collection itself. In Example 1.1.1, we already encountered the `length` property. Let's take a look at a selection of the methods avaialable to arrays in MakeCode:
+The usefulness of the arrays doesn't stop with the ability to keep a collection of data together. Arrays come with many useful `[<cept>]`_methods_ and `[<cept>]`_properties_ for manipulating the elements of the collection or the whole collection itself. In Example 1.1.1, we already encountered the `length` property. The best way to explore methods in MakeCode is to declare an array variable, invoke the dropdown by using the `.` selection operator to pick a method or property, 
+
+<img src="images/method-dropdown.png" alt="MakeCode editor method dropdown" width="400"/>  
+
+and then hover over the name to invoke the documentation popup.
+
+<img src="images/doc-popup.png" alt="MakeCode editor method dropdown" width="400"/>  
+
+Let's take a look at some of the methods:
 ```javascript
 // Example 1.1.2
+
 
 ```
 methods are called as functions...
