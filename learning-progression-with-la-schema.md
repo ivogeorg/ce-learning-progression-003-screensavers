@@ -1,16 +1,53 @@
 # CPE 1040 - Fall 2020
 
+This is learning progression 003 for the Fall 2020 installment of the course CPE 1040: Introduction to Computer Engineering at MSU Denver.
+
 ## Learning Progression 003: Screensavers
 
-### Topics
+This progression is the culmination of the first part of the course, in which we program the bear-bones micro:bit without any extenral circuitry attached and without communication features. We pull together all the programming language features and best practices that we introduced in the previous two learning progressions, to write a significantly larger target program over 12 steps. This will present the opportunity to learn about some of the design considerations a programmer makes when approaching a larger project. The progression is also going to dig a bit deeper into the _softare stack_ of the micro:bit, and uncover the ways it affects these considerations.
 
-_Note: Composition and target-program learning curve in [progression notes](progression-notes.md)._
+### 1. Arrays revisited  
 
-1. Arrays revisited  
+#### 1. Study  
+
+`[<lernact-rd>]` We have already seen how versatile and powerful arrays can be in a program, allowing us to achieve complex program behavior far more easily than if arrays weren't available to the programming language. Let's quickly review what arrays are. An `[<cept>]`_array_ is an _ordered sequence_ of elements _of the same type_. Because it holds more than one piece of data, it is also called a `[<cept>]`[_data structure_](https://en.wikipedia.org/wiki/Data_structure). Like any other variable and function, an array has a _name_. This name can be used to refer not only to the whole array, but to individual elements of the array. Because they are ordered, they can be referenced by `[<cept>]`_index_, that is, by their place in the order, using the `[<cept>]`_selection operator_ `[]` (opening and closing square bracket). Let's take a look:
+```javascript
+// Example 1.1.1
+
+let firstPrimes : number[] = [1, 3, 5, 7, 11, 13, 17, 19, 23, 31]
+
+let favoritePrime : number = firstPrimes[3]  // selects 7
+
+for (let i = 0; i < firstPrimes.length; i ++) {
+    if (firstPrimes[i] != favoritePrime) {
+        basic.showNumber(firstPrimes[i])
+    } else {
+        basic.showString("My favorite prime is " + favoritePrime.toString() + "!")
+    }
+}
+```
+As we can see, the `[]` operator is used heavily with arrays. In fact, that's how you can spot array variables in a program even if you are not looking at the array declaration. Let's enumerate its uses:
+1. In `let firstPrimes...`, it indicates an array data type by attaching to the right of the `[<cept>]`_base type_. We are declaring an array of numbers, so the base time is `number`, and the type of the array variable `firstPrimes` is `number[]`. The single pair of brackets `[]` also indicates that this is `[<cept>]`_unidimensional_ array.  
+2. In `let favoritePrime...`, it selects a particular element of the array, in this case the one with index 3, making it the forth element. Note that the array index always starts at 0.  
+3. In `firstPrimes[i]`, it picks out the element, the index of which is equal to the current value of the loop variable `i`. So, the `[]` operator admits `[<cept>]`_expressions_ between the brackets, as long as they evaluate to an `[<cept>]`_integer_ value. That is, the result of evaluating the expression has to be a whole number. In addition, the integer has to be in the index `[<cept>]`_range_ of the array. That is, the number between the brackets has to be among the valid indices of the array. In our case, the range is [0, 9].  
+
+The usefulness of the arrays doesn't stop with the ability to keep a collection of data together. Arrays come with many useful `[<cept>]`_methods_ and `[<cept>]`_properties_ for manipulating the elements of the collection or the whole collection itself. In Example 1.1.1, we already encountered the `length` property. Let's take a look at a selection of the methods avaialable to arrays in MakeCode:
+```javascript
+// Example 1.1.2
+
+```
+methods are called as functions...
+properties are called as fields...
+
     - array methods  
     - Multidimensional arrays   
-    - Matching gestures with screensavers ([gist](https://gist.github.com/ivogeorg/efa6747383323654b3556e3c3470efa6))   
-2. Screensavers ([gists](https://gist.github.com/ivogeorg)):   
+    - Matching gestures with functions   
+    
+#### 2. Apply  
+
+#### 3. Present  
+
+### 2. Screensavers   
    - code writing simulation in work mode  
      - challenge: scroll up the already written text, adding one line at a time, except the first 4  
    - "rain" (Ivo)  
