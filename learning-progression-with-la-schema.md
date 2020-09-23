@@ -39,12 +39,92 @@ and then hover over the name to invoke the documentation popup.
 
 <img src="images/doc-popup.png" alt="MakeCode editor method dropdown" width="400"/>  
 
-Let's take a look at some of the methods:
+Before we review the array methods, we need to point out what the difference is between methods and properties. Looking back at the material on classes in the previous learning progression, we can see that the array methods look like class methods and the `length` property as a `[<cept>]`_class field_, that is, a data point. The actual implementation is a bit more complicated, due to the need for MakeCode to support devices other than the micro:bit, but from our purposes, we can think of these methods and property as defined in the class `Array`. _Methods_ are called like functions, with parentheses `()`, as in `arr.reverse()`, while _properties_ are called like data fields, without parentheses, as in `arr.length`.
+
+Use the following functions to look at the contents of arrays in the next examples:
 ```javascript
 // Example 1.1.2
 
+function showNumericArray(a : number[]) {
+   for (let i=0; i<a.length; i++) {
+      basic.showNumber(a[i])
+   }
+}
 
+function showStringArray(a : string[]) {
+   for (let i=0; i<a.length; i++) {
+      basic.showString(a[i])
+   }
+}
 ```
+
+Now, let's look at the available methods systematically, grouping them by general function:
+1. Content methods insert, remove, and replace elements of the array, changing its contents. These are (Note: Arguments, if any, are omitted for brevity.):
+   - `push()`, also known as _"append"_, adds an element at the end of the array.    
+   - `pop()` removes the last element and returns it.  
+   - `insertAt()` inserts an element at an index.  
+   - `removeAt()` removes an element at an index.    
+   - `set()` sets the value of an element at an index.  
+   - `removeElement()` removes the first occurrence of an element.    
+   - `fill()` Read the JS documentation on its [usage](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill).)  
+   - `shift()` remove an element from the beginning of the array and return the new length.  
+   - `unshift()` add an element at the beginning of the array and return the new length.  
+   ```javascript
+   // Example 1.1.3
+   let a : number[] = [5, 8, 12, 91, 41, 0, 22]
+   a.push(13)
+   showNumericArray(a)
+   
+   basic.showNumber(a.pop())
+   
+   a.insertAt(2, 56)
+   showNumericArray(a)
+
+   basic.showNumber(a.removeAt(1))
+   
+   a.set(0, 22)
+   showNumericArray(a)
+   
+   if (a.removeElement(22)) {
+       basic.showString("Successfully removed!") 
+       showNumericArray(a)
+   }
+
+   a.fill(87, 2, 4)
+   showNumericArray(a)
+   ```
+2. Accessor methods:
+   - `get()` return the value of the element at an index. `a.get(5)` is equivalent to `a[5]`.  
+   - `indexOf()` returns the index of an element, if found, or `-1`, if not found.  
+   ```javascript
+   // Example 1.1.4
+   let a : number[] = [5, 8, 12, 91, 41, 0, 22]
+   basic.showNumber(a.indexOf(91))  // returns 3
+   basic.showNumber(a.indexOf(87))  // returns -1 (no 87 in the array)
+   ```
+3. Order methods, which change the order of the elements:
+   - `reverse()` permanently reverses the order of the elements of the array on which it was called.  
+   - `sort()` returns the sorted array.  
+   ```javascript
+   // Example 1.1.5
+   let a : number[] = [5, 8, 12, 91, 41, 0, 22]
+   a.reverse()
+   showNumericArray(a)
+   showNumericArray(a.sort())   
+   ```
+4. Methods on two arrays:
+   - `concat()` returns a new array with the argument array concatenated (that is, appended) to the array on which it was called.  
+   ```javascript
+   // Example 1.1.6
+   let a : number[] = [5, 8, 12]
+   let b : number[] = a.concat([91, 41, 0, 22])
+   showNumericArray(b)
+   ```
+5. 
+
+   
+   
+   
 methods are called as functions...
 properties are called as fields...
 
