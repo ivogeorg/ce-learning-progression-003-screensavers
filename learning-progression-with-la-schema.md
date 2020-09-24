@@ -60,15 +60,19 @@ Table of Contents
       * [3\. Present](#3-present-11)
 
 ## Learning Progression 003: Screensavers
-[toc](#table-of-contents)
+[[toc](#table-of-contents)]
 
 This progression is the culmination of the first part of the course, in which we program the bear-bones micro:bit without any extenral circuitry attached and without communication features. We pull together all the programming language features and best practices that we introduced in the previous two learning progressions, to write a significantly larger target program over 12 steps. This will present the opportunity to learn about some of the design considerations a programmer makes when approaching a larger project. The progression is also going to dig a bit deeper into the _softare stack_ of the micro:bit, and uncover the ways it affects these considerations.
 
 ### 1. Arrays revisited  
+[[toc](#table-of-contents)]
 
 #### 1. Study  
+[[toc](#table-of-contents)]
 
 ##### Arrays
+[[toc](#table-of-contents)]
+
 `[<lernact-rd>]`We have already seen how versatile and powerful arrays can be in a program, allowing us to achieve complex program behavior far more easily than if arrays weren't available to the programming language. Let's quickly review what arrays are. An `[<cept>]`_array_ is an _ordered sequence_ of elements _of the same type_. Because it holds more than one piece of data, it is also called a `[<cept>]`[_data structure_](https://en.wikipedia.org/wiki/Data_structure). Like any other variable and function, an array has a _name_. This name can be used to refer not only to the whole array, but to individual elements of the array. Because they are ordered, they can be referenced by `[<cept>]`_index_, that is, by their place in the order, using the `[<cept>]`_selection operator_ `[]` (opening and closing square bracket). Let's take a look:
 ```javascript
 // Example 1.1.1
@@ -91,6 +95,7 @@ As we can see, the `[]` operator is used heavily with arrays. In fact, that's ho
 3. In `firstPrimes[i]`, it picks out the element, the index of which is equal to the current value of the loop variable `i`. So, the `[]` operator admits `[<cept>]`_expressions_ between the brackets, as long as they evaluate to an `[<cept>]`_integer_ value. That is, the result of evaluating the expression has to be a whole number. In addition, the integer has to be in the index `[<cept>]`_range_ of the array. That is, the number between the brackets has to be among the valid indices of the array. In our case, the range is [0, 9].  
 
 ##### Array methods
+[[toc](#table-of-contents)]
 
 `[<lernact-rd>]`The usefulness of the arrays doesn't stop with the ability to keep a collection of data together. Arrays come with many useful `[<cept>]`_methods_ and `[<cept>]`_properties_ for manipulating the elements of the collection or the whole collection itself. In Example 1.1.1, we already encountered the `length` property. The best way to explore methods in MakeCode is to declare an array variable, invoke the dropdown by using the `.` selection operator to pick a method or property, 
 
@@ -264,6 +269,7 @@ Now, let's look at the available methods systematically, grouping them by genera
    }`)
    ```
 ##### Multi-dimensional arrays
+[[toc](#table-of-contents)]
 
 `[<lernact-rd>]`Multi-dimensional arrays are _arrays of arrays_. In other words, the base type of multi-dimensional array is also a (multi-dimensional) array. The number of dimensions is indicated by the number of `[]` pairs after the base type of the innermost array, as in `let threeDimensionalGrid : number[][][]`. The indexing of elements works by level, from the outermost to the innermost, as in `threeDimensionalGrid[5][4][10]` references the value of _the element of index 10 of the element of index 4 of the element of index 5_. This is a lot easier to understand with an example:
 ```javascript
@@ -318,12 +324,14 @@ Things to notice here:
 3. Because the snake is moving, we advance the `head` and remove at the `tail`.
     
 #### 2. Apply  
+[[toc](#table-of-contents)]
 
 1. `[<lernact-prac>]`Create an array of the numbers 1 to 100, inclusive. Do not waste your time typing the numbers. Write a loop and use the appropriate array method to add elements. In a separate loop, display the last 17 numbers.  
 2. `[<lernact-prac>]`Using the method of the [Sieve of Eratosthenes](https://www.smartickmethod.com/blog/math/operations-and-algebraic-thinking/divisibility/prime-numbers-sieve-eratosthenes/), update your program from 1.2.1 to go through the array and leave only the prime numbers. Show the remaining numbers in a loop.  
 3. `[<lernact-prac>]`Modify the program from Example 1.1.10 so that the snake appears from the center, goes to the top left corner and returns back.
 
 #### 3. Present  
+[[toc](#table-of-contents)]
 
 In the [programs](programs) directory:
 1. Add your program from 1.2.1 with filename `microbit-program-1-2-1.js`.  
@@ -340,8 +348,11 @@ In the [Lab Notebook](README.md):
 
 
 ### 2. Screensavers   
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
    - code writing simulation in work mode  
      - note: scroll up the already written text, adding one line at a time, except the first 4  
    - "rain" (Ivo)  
@@ -367,12 +378,17 @@ In the [Lab Notebook](README.md):
      - challenge: reflection and further fading at the walls  
      
 #### 2. Apply
+[[toc](#table-of-contents)]
 
 #### 3. Present
+[[toc](#table-of-contents)]
 
 ### 3. Program structure  
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
    - global vars  
    - function and class declarations  
    - event handlers  
@@ -380,11 +396,16 @@ In the [Lab Notebook](README.md):
    - proper indentation and style guide
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 4. Divide & conquer: program decomposition  
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
    - high-level program structure:  
      - 2 "modes": working and asleep  
      - code writing in working mode  
@@ -392,22 +413,32 @@ In the [Lab Notebook](README.md):
    - analysis and decomposition of target programs   
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 5. Encapsulation    
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
    - the benefits of encapsulation  
    - functions
    - classes   
    - namespaces (`basic`, `input`, `game`, etc.)    
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 6. Functions revisited  
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
    - Pass by value, pass by reference  
      ```javascript
      let arr : number[] = [1, 2, 3]
@@ -429,11 +460,16 @@ In the [Lab Notebook](README.md):
      - change in place  
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 7. Classes revisited    
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
    - object properties  
    - object literals: objects as dictionaries  
    - in JS, [classes are functions under the hood](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)  
@@ -443,12 +479,17 @@ In the [Lab Notebook](README.md):
      - JS vs TS  
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 8. Code reading
+[[toc](#table-of-contents)]
 
 #### 1. Study
-https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts  
+[[toc](#table-of-contents)]
+
+[`game.ts`](https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts)  
    - export  
    - functions (`createSprite`)  
    - classes (`LedSprite`)  
@@ -459,11 +500,18 @@ https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts
      - TS [namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)  
 
 #### 2. Apply
+[[toc](#table-of-contents)]
+
 #### 3. Present
+[[toc](#table-of-contents)]
+
    
 ### 9. Iterative development with Github  
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
    - status, add, commit, pull, push  
    - remote & local (git SCM)  
    - Github workflow (pull requests, Github Classroom **Feedback**)  
@@ -472,11 +520,16 @@ https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts
    - incremental development example
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 10. Reactive system  
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
     - [reactive system](https://makecode.microbit.org/device/reactive)  
     - `forever` function vs `while` loop  
       feature | `forever` | `while`
@@ -493,11 +546,16 @@ https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts
       - (Brendan) Does a time slice have to end for event handling to proceed?  
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 11. Matrix dynamics  
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
     - can use out-of-bound coordinates in `plot()` and `unplot()`  
     - don't use `pause()`, `show*()` for smooth graphics 
     - `clearScreen()` is often necessary but it's fast, so no problem  
@@ -516,17 +574,24 @@ https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts
     - _frame_-based display for speed and smoothness  
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 ### 12. Randomized behavior  
+[[toc](#table-of-contents)]
 
 #### 1. Study
+[[toc](#table-of-contents)]
+
     - dimensions of randomization  
     - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
     - write your own custom randomization routines  
 
 #### 2. Apply
+[[toc](#table-of-contents)]
 #### 3. Present
+[[toc](#table-of-contents)]
    
 
 
