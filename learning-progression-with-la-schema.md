@@ -282,8 +282,10 @@ In the [Lab Notebook](README.md):
 
 
 ### 2. Screensavers   
+
+#### 1. Study
    - code writing simulation in work mode  
-     - challenge: scroll up the already written text, adding one line at a time, except the first 4  
+     - note: scroll up the already written text, adding one line at a time, except the first 4  
    - "rain" (Ivo)  
      - challenge: rain at 45°
    - [fireworks](https://github.com/Introduction-to-Computer-Engineering/screensavers-for-the-micro-bit-AKA-turtle/blob/master/screensaver.js) (Dwight)  
@@ -305,23 +307,49 @@ In the [Lab Notebook](README.md):
        - fading away from drop splash point  
        - interference patterns with brightness  
      - challenge: reflection and further fading at the walls  
-3. Program structure  
+     
+#### 2. Apply
+
+#### 3. Present
+
+### 3. Program structure  
+
+#### 1. Study
    - global vars  
    - function and class declarations  
    - event handlers  
    - forever loops  
-4. Divide & conquer: program decomposition:  
+   - proper indentation and style guide
+
+#### 2. Apply
+#### 3. Present
+   
+### 4. Divide & conquer: program decomposition  
+
+#### 1. Study
    - high-level program structure:  
      - 2 "modes": working and asleep  
      - code writing in working mode  
      - 5 gestures for five screensavers in asleep mode  
    - analysis and decomposition of target programs   
-5. Encapsulation    
+
+#### 2. Apply
+#### 3. Present
+   
+### 5. Encapsulation    
+
+#### 1. Study
    - the benefits of encapsulation  
    - functions
    - classes   
    - namespaces (`basic`, `input`, `game`, etc.)    
-6. Functions revisited  
+
+#### 2. Apply
+#### 3. Present
+   
+### 6. Functions revisited  
+
+#### 1. Study
    - Pass by value, pass by reference  
      ```javascript
      let arr : number[] = [1, 2, 3]
@@ -341,7 +369,13 @@ In the [Lab Notebook](README.md):
      - return a value  
      - return a modified argument  
      - change in place  
-7. Classes revisited    
+
+#### 2. Apply
+#### 3. Present
+   
+### 7. Classes revisited    
+
+#### 1. Study
    - object properties  
    - object literals: objects as dictionaries  
    - in JS, [classes are functions under the hood](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes)  
@@ -349,7 +383,14 @@ In the [Lab Notebook](README.md):
      - [Static TS](https://www.microsoft.com/en-us/research/publication/static-typescript/) implementation  
      - prototypes (too much)  
      - JS vs TS  
-8. Code reading: https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts  
+
+#### 2. Apply
+#### 3. Present
+   
+### 8. Code reading
+
+#### 1. Study
+https://github.com/microsoft/pxt-microbit/blob/master/libs/core/game.ts  
    - export  
    - functions (`createSprite`)  
    - classes (`LedSprite`)  
@@ -358,14 +399,26 @@ In the [Lab Notebook](README.md):
    - TODO:
      - micro:bit [tech docs](https://makecode.com/docs)  
      - TS [namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)  
-9. Iterative development with Github  
+
+#### 2. Apply
+#### 3. Present
+   
+### 9. Iterative development with Github  
+
+#### 1. Study
    - status, add, commit, pull, push  
    - remote & local (git SCM)  
    - Github workflow (pull requests, Github Classroom **Feedback**)  
    - informative commit messages  
    - releases & tags  
    - incremental development example
-10. Reactive sysem  
+
+#### 2. Apply
+#### 3. Present
+   
+### 10. Reactive system  
+
+#### 1. Study
     - [reactive system](https://makecode.microbit.org/device/reactive)  
     - `forever` function vs `while` loop  
       feature | `forever` | `while`
@@ -380,7 +433,13 @@ In the [Lab Notebook](README.md):
       - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
       - issues of speed, memory, etc.  
       - (Brendan) Does a time slice have to end for event handling to proceed?  
-11. Matrix dynamics  
+
+#### 2. Apply
+#### 3. Present
+   
+### 11. Matrix dynamics  
+
+#### 1. Study
     - can use out-of-bound coordinates in `plot()` and `unplot()`  
     - don't use `pause()`, `show*()` for smooth graphics 
     - `clearScreen()` is often necessary but it's fast, so no problem  
@@ -397,26 +456,19 @@ In the [Lab Notebook](README.md):
       }
       ```
     - _frame_-based display for speed and smoothness  
-12. Randomized behavior  
+
+#### 2. Apply
+#### 3. Present
+   
+### 12. Randomized behavior  
+
+#### 1. Study
     - dimensions of randomization  
     - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
     - write your own custom randomization routines  
 
-
-### For later LP
-1. Stack frames: here or further along the curriculum (if so, where?)   
-2. [interfaces](https://makecode.microbit.org/javascript/interfaces)?  
-3. Memory layout.  
-4. Data structures, abstract data types, and algorithms:  
-   - [data structures vs ADTs](https://www.google.com/search?q=data+structure+vs+abstract+data+type&oq=data+structure+vs+&aqs=chrome.0.0l2j69i57j0l5.4669j0j7&sourceid=chrome&ie=UTF-8)  
-   - array, linked-list, map (dictionary, hash table), tree   
-   - stack, queue  
-   - sorting  
-   
-   
-
-### Step 1: 
-
-#### 1. Study
 #### 2. Apply
 #### 3. Present
+   
+
+
