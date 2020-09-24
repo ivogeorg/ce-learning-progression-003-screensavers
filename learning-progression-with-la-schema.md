@@ -261,7 +261,25 @@ Things to notice here:
     
 #### 2. Apply  
 
+1. `[<lernact-prac>]`Create an array of the numbers 1 to 100, inclusive. Do not waste your time typing the numbers. Write a loop and use the appropriate array method to add elements. In a separate loop, display the last 17 numbers.  
+2. `[<lernact-prac>]`Using the method of the [Sieve of Eratosthenes](https://www.smartickmethod.com/blog/math/operations-and-algebraic-thinking/divisibility/prime-numbers-sieve-eratosthenes/), update your program from 1.2.1 to go through the array and leave only the prime numbers. Show the remaining numbers in a loop.  
+3. `[<lernact-prac>]`Modify the program from Example 1.1.10 so that the snake appears from the center, goes to the top left corner and returns back.
+
 #### 3. Present  
+
+In the [programs](programs) directory:
+1. Add your program from 1.2.1 with filename `microbit-program-1-2-1.js`.  
+2. Add your program from 1.2.2 with filename `microbit-program-1-2-2.js`.  
+3. Add your program from 1.2.3 with filename `microbit-program-1-2-3.js`.  
+
+In the [Lab Notebook](README.md):
+1. Link to the program from 1.2.1.  
+2. Link to a demo video showing the execution of the program from 1.2.1.  
+3. Link to the program from 1.2.2.  
+4. Link to a demo video showing the execution of the program from 1.2.2.  
+5. Link to the program from 1.2.3.  
+6. Link to a demo video showing the execution of the program from 1.2.3.  
+
 
 ### 2. Screensavers   
    - code writing simulation in work mode  
