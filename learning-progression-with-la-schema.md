@@ -10,7 +10,8 @@ This progression is the culmination of the first part of the course, in which we
 
 #### 1. Study  
 
-`[<lernact-rd>]` We have already seen how versatile and powerful arrays can be in a program, allowing us to achieve complex program behavior far more easily than if arrays weren't available to the programming language. Let's quickly review what arrays are. An `[<cept>]`_array_ is an _ordered sequence_ of elements _of the same type_. Because it holds more than one piece of data, it is also called a `[<cept>]`[_data structure_](https://en.wikipedia.org/wiki/Data_structure). Like any other variable and function, an array has a _name_. This name can be used to refer not only to the whole array, but to individual elements of the array. Because they are ordered, they can be referenced by `[<cept>]`_index_, that is, by their place in the order, using the `[<cept>]`_selection operator_ `[]` (opening and closing square bracket). Let's take a look:
+##### Arrays
+`[<lernact-rd>]`We have already seen how versatile and powerful arrays can be in a program, allowing us to achieve complex program behavior far more easily than if arrays weren't available to the programming language. Let's quickly review what arrays are. An `[<cept>]`_array_ is an _ordered sequence_ of elements _of the same type_. Because it holds more than one piece of data, it is also called a `[<cept>]`[_data structure_](https://en.wikipedia.org/wiki/Data_structure). Like any other variable and function, an array has a _name_. This name can be used to refer not only to the whole array, but to individual elements of the array. Because they are ordered, they can be referenced by `[<cept>]`_index_, that is, by their place in the order, using the `[<cept>]`_selection operator_ `[]` (opening and closing square bracket). Let's take a look:
 ```javascript
 // Example 1.1.1
 
@@ -31,7 +32,9 @@ As we can see, the `[]` operator is used heavily with arrays. In fact, that's ho
 2. In `let favoritePrime...`, it selects a particular element of the array, in this case the one with index 3, making it the forth element. Note that the array index always starts at 0.  
 3. In `firstPrimes[i]`, it picks out the element, the index of which is equal to the current value of the loop variable `i`. So, the `[]` operator admits `[<cept>]`_expressions_ between the brackets, as long as they evaluate to an `[<cept>]`_integer_ value. That is, the result of evaluating the expression has to be a whole number. In addition, the integer has to be in the index `[<cept>]`_range_ of the array. That is, the number between the brackets has to be among the valid indices of the array. In our case, the range is [0, 9].  
 
-The usefulness of the arrays doesn't stop with the ability to keep a collection of data together. Arrays come with many useful `[<cept>]`_methods_ and `[<cept>]`_properties_ for manipulating the elements of the collection or the whole collection itself. In Example 1.1.1, we already encountered the `length` property. The best way to explore methods in MakeCode is to declare an array variable, invoke the dropdown by using the `.` selection operator to pick a method or property, 
+##### Array methods
+
+`[<lernact-rd>]`The usefulness of the arrays doesn't stop with the ability to keep a collection of data together. Arrays come with many useful `[<cept>]`_methods_ and `[<cept>]`_properties_ for manipulating the elements of the collection or the whole collection itself. In Example 1.1.1, we already encountered the `length` property. The best way to explore methods in MakeCode is to declare an array variable, invoke the dropdown by using the `.` selection operator to pick a method or property, 
 
 <img src="images/method-dropdown.png" alt="MakeCode editor method dropdown" width="400"/>  
 
@@ -159,20 +162,102 @@ Now, let's look at the available methods systematically, grouping them by genera
    else
       basic.showString("Even and odd!")
    ```
-7. Methods applying a `[<cept>]` callback function on every element. (Notice that `find()`, `every()`, and `some()` also take callbacks as arguments.)
-   - `map()`  
-   - `forEach()`  
-   - `reduce()`  
+7. General methods applying a `[<cept>]` callback function on every element. (Notice that `find()`, `every()`, and `some()` also take callbacks as arguments, but they have very specific function.)
+   - `map()` applies a callback function to each element of an array and returns the resulting array. The original array is not modified.  
+   - `forEach()` applies a callback function to each element of an array.  The original array is not modified.  
+   - `reduce()` applies a callback function to each element, while aggregating the result.  
+   ```javascript
+   // Example 1.1.9
+   let words : string[] = ["HIPY", "PAPY", "BTHUTHDTH", "THUTHDA", "BTHUTHDY"]
 
-   
-   
-   
-methods are called as functions...
-properties are called as fields...
+   showStringArray(words.map(function (value: string, index: number) {
+       return value.toLowerCase()
+   }))
 
-    - array methods  
-    - Multidimensional arrays   
-    - Matching gestures with functions   
+   let shortWords : string[] = ["hop", "baby", "nose", "scat", "grog"]
+
+   shortWords.forEach(function (value: string, index: number) {
+       let numeral : string
+       switch (index) {
+           case 0:
+           numeral = "first"
+           break
+           case 1:
+           numeral = "second"
+           break
+           case 2:
+           numeral = "third"
+           break
+           default:
+           numeral = `${ index + 1 }th`
+           break
+       }
+       basic.showString(`The ${ numeral }th element is ${ value }.`)
+   })
+   
+   let a : number[] = [4, 9, 2, 4]
+
+   basic.showString(`The sum of array elements is ${ 
+       a.reduce(
+           function (previousValue: number, currentValue: number, currentIndex: number) {
+               return previousValue + currentValue
+           }, 
+           null) 
+   }`)
+   ```
+##### Multi-dimensional arrays
+
+`[<lernact-rd>]`Multi-dimensional arrays are _arrays of arrays_. In other words, the base type of multi-dimensional array is also a (multi-dimensional) array. The number of dimensions is indicated by the number of `[]` pairs after the base type of the innermost array, as in `let threeDimensionalGrid : number[][][]`. The indexing of elements works by level, from the outermost to the innermost, as in `threeDimensionalGrid[5][4][10]` references the value of _the element of index 10 of the element of index 4 of the element of index 5_. This is a lot easier to understand with an example:
+```javascript
+// Example 1.1.10
+
+let path = [
+    [0, 0], [1, 0], [2, 0], [3, 0], [4, 0], // top row to the right
+    [4, 1], [4, 2], [4, 3], [4, 4],         // right column down
+    [3, 4], [2, 4], [1, 4], [0, 4],         // bottom row to the left
+    [0, 3], [0, 2], [0, 1],                 // left column up
+    [1, 1], [2, 1], [3, 1],                 // top but 1 row to the right (remaining headitions)
+    [3, 2], [3, 3],                         // right but 1 column down (remaining headitions)
+    [2, 3], [1, 3],                         // bottom but 1 row to the left (rem head)
+    [1, 2],                                 // left but 1 col up (rem head)
+    [2, 2]                                  // center
+]
+
+const SNAKE_LEN: number = 7                 // snake length parameter
+let snake: number[] = []                    // snake represented by trajectory indices
+for (let i = - SNAKE_LEN; i < 0; i++)
+    snake.push(i)                           // populate snake array
+
+// the snake goes back and forth along the path
+basic.forever(function () {
+    let head: number = 0
+    let tail: number
+    while (head < 25) {
+        led.plot(path[head][0], path[head][1])
+        snake.push(head++)
+        tail = snake.removeAt(0)
+        if (tail >= 0)
+            led.unplot(path[tail][0], path[tail][1])
+        basic.pause(200)
+    }
+
+    // reverse the snake "in place"
+    head = tail
+    tail = 24
+    while (tail > 0) {
+        if (head >= 0)
+            led.plot(path[head][0], path[head][1])
+        snake.insertAt(0, head--)
+        tail = snake.pop()
+        led.unplot(path[tail][0], path[tail][1])
+        basic.pause(200)
+    }
+})
+```
+Things to notice here:
+1. The `path` variable is a two-dimensional array representing the trajectory of the snake. It contains 25 (x, y) positions on the 5x5 grid, which are so arranged that the `snake` travels along a tightening spiral, touching every position in the grid.  
+2. The `snake` itself is a one-dimensional array of 7 consecutive indices into the the `path` array. `head` is the index of the snake's front, and `tail` is the index of the snake's back. The snake travels head forward. So, to show the snake, we use calls to `led.plot()` with coordinates `path[head][0]` for the x parameter and `path[head][1]` for the y parameter.  
+3. Because the snake is moving, we advance the `head` and remove at the `tail`.
     
 #### 2. Apply  
 
