@@ -371,7 +371,7 @@ In the [Lab Notebook](README.md):
        - relate to LP002 snake  
    - frequency bar (Ivo)
      - challenge: smooth out, as in a real piece of music    
-   - pond ripples  
+   - (CHALLENGE) pond ripples  
      - TODO:
        - fading away from drop splash point  
        - interference patterns with brightness  
@@ -411,6 +411,7 @@ In the [Lab Notebook](README.md):
      - code writing in working mode  
      - 5 gestures for five screensavers in asleep mode  
    - analysis and decomposition of target programs   
+     - using arrays to match gestures and ss functions  
 
 #### 2. Apply
 [[toc](#table-of-contents)]
