@@ -575,6 +575,9 @@ simulator fidelity | yes | no
       }
       ```
     - _frame_-based display for speed and smoothness  
+    - mod-based timing  
+      - simulator vs device  
+      - fine-tuning
 
 #### 2. Apply
 [[toc](#table-of-contents)]
@@ -590,6 +593,7 @@ simulator fidelity | yes | no
     - dimensions of randomization  
     - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
     - write your own custom randomization routines  
+    - the bouncing-ball randomization (multiple dimensions)  
 
 #### 2. Apply
 [[toc](#table-of-contents)]
