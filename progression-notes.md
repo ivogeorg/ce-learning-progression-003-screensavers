@@ -24,4 +24,6 @@ These notes refer to the contents and apply tasks in [learning progression with 
    - array, linked-list, map (dictionary, hash table), tree   
    - stack, queue  
    - sorting  
+6. Debugging  
+   - micro:bit [error codes](https://support.microbit.org/support/solutions/articles/19000016969-micro-bit-error-codes)  
    
