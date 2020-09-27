@@ -531,13 +531,15 @@ In the [Lab Notebook](README.md):
 #### 1. Study
 [[toc](#table-of-contents)]
 
+`forever` function vs `while` loop  
+feature | `forever` | `while`
+-- | -- | --
+condition | no | yes
+`break` | no | yes
+scheduling | yes | no
+simulator fidelity | yes | no
+
     - [reactive system](https://makecode.microbit.org/device/reactive)  
-    - `forever` function vs `while` loop  
-      feature | `forever` | `while`
-      -- | -- | --
-      condition | no | yes
-      `break` | no | yes
-      scheduling | yes | no
     - Why you shouldn't have event handling in a `forever` loop  
     - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)  
       - `pause()` should be avoided, especially with multiple `forever()` loops  
