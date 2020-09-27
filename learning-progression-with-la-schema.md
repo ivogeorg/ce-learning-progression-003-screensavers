@@ -2,62 +2,6 @@
 
 This is learning progression 003 for the Fall 2020 installment of the course CPE 1040: Introduction to Computer Engineering at MSU Denver.
 
-Table of Contents
-=================
-
-* [CPE 1040 \- Fall 2020](#cpe-1040---fall-2020)
-  * [Learning Progression 003: Screensavers](#learning-progression-003-screensavers)
-    * [1\. Arrays revisited](#1-arrays-revisited)
-      * [1\. Study](#1-study)
-        * [Arrays](#arrays)
-        * [Array methods](#array-methods)
-        * [Multi\-dimensional arrays](#multi-dimensional-arrays)
-      * [2\. Apply](#2-apply)
-      * [3\. Present](#3-present)
-    * [2\. Screensavers](#2-screensavers)
-      * [1\. Study](#1-study-1)
-      * [2\. Apply](#2-apply-1)
-      * [3\. Present](#3-present-1)
-    * [3\. Program structure](#3-program-structure)
-      * [1\. Study](#1-study-2)
-      * [2\. Apply](#2-apply-2)
-      * [3\. Present](#3-present-2)
-    * [4\. Divide &amp; conquer: program decomposition](#4-divide--conquer-program-decomposition)
-      * [1\. Study](#1-study-3)
-      * [2\. Apply](#2-apply-3)
-      * [3\. Present](#3-present-3)
-    * [5\. Encapsulation](#5-encapsulation)
-      * [1\. Study](#1-study-4)
-      * [2\. Apply](#2-apply-4)
-      * [3\. Present](#3-present-4)
-    * [6\. Functions revisited](#6-functions-revisited)
-      * [1\. Study](#1-study-5)
-      * [2\. Apply](#2-apply-5)
-      * [3\. Present](#3-present-5)
-    * [7\. Classes revisited](#7-classes-revisited)
-      * [1\. Study](#1-study-6)
-      * [2\. Apply](#2-apply-6)
-      * [3\. Present](#3-present-6)
-    * [8\. Code reading](#8-code-reading)
-      * [1\. Study](#1-study-7)
-      * [2\. Apply](#2-apply-7)
-      * [3\. Present](#3-present-7)
-    * [9\. Iterative development with Github](#9-iterative-development-with-github)
-      * [1\. Study](#1-study-8)
-      * [2\. Apply](#2-apply-8)
-      * [3\. Present](#3-present-8)
-    * [10\. Reactive system](#10-reactive-system)
-      * [1\. Study](#1-study-9)
-      * [2\. Apply](#2-apply-9)
-      * [3\. Present](#3-present-9)
-    * [11\. Matrix dynamics](#11-matrix-dynamics)
-      * [1\. Study](#1-study-10)
-      * [2\. Apply](#2-apply-10)
-      * [3\. Present](#3-present-10)
-    * [12\. Randomized behavior](#12-randomized-behavior)
-      * [1\. Study](#1-study-11)
-      * [2\. Apply](#2-apply-11)
-      * [3\. Present](#3-present-11)
 
 ## Learning Progression 003: Screensavers
 [[toc](#table-of-contents)]
@@ -418,7 +362,24 @@ In the [Lab Notebook](README.md):
 #### 3. Present
 [[toc](#table-of-contents)]
    
-### 5. Encapsulation    
+### 5. Randomized behavior  
+[[toc](#table-of-contents)]
+
+#### 1. Study
+[[toc](#table-of-contents)]
+
+    - dimensions of randomization  
+    - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
+    - write your own custom randomization routines  
+    - the bouncing-ball randomization (multiple dimensions)  
+
+#### 2. Apply
+[[toc](#table-of-contents)]
+#### 3. Present
+[[toc](#table-of-contents)]
+   
+
+### 6. Encapsulation    
 [[toc](#table-of-contents)]
 
 #### 1. Study
@@ -434,7 +395,7 @@ In the [Lab Notebook](README.md):
 #### 3. Present
 [[toc](#table-of-contents)]
    
-### 6. Functions revisited  
+### 7. Functions revisited  
 [[toc](#table-of-contents)]
 
 #### 1. Study
@@ -465,7 +426,7 @@ In the [Lab Notebook](README.md):
 #### 3. Present
 [[toc](#table-of-contents)]
    
-### 7. Classes revisited    
+### 8. Classes revisited    
 [[toc](#table-of-contents)]
 
 #### 1. Study
@@ -484,7 +445,7 @@ In the [Lab Notebook](README.md):
 #### 3. Present
 [[toc](#table-of-contents)]
    
-### 8. Code reading
+### 9. Code reading
 [[toc](#table-of-contents)]
 
 #### 1. Study
@@ -507,7 +468,7 @@ In the [Lab Notebook](README.md):
 [[toc](#table-of-contents)]
 
    
-### 9. Iterative development with Github  
+### 10. Iterative development with Github  
 [[toc](#table-of-contents)]
 
 #### 1. Study
@@ -525,7 +486,7 @@ In the [Lab Notebook](README.md):
 #### 3. Present
 [[toc](#table-of-contents)]
    
-### 10. Reactive system  
+### 11. Reactive system  
 [[toc](#table-of-contents)]
 
 #### 1. Study
@@ -553,7 +514,7 @@ simulator fidelity | yes | no
 #### 3. Present
 [[toc](#table-of-contents)]
    
-### 11. Matrix dynamics  
+### 12. Matrix dynamics  
 [[toc](#table-of-contents)]
 
 #### 1. Study
@@ -584,21 +545,4 @@ simulator fidelity | yes | no
 #### 3. Present
 [[toc](#table-of-contents)]
    
-### 12. Randomized behavior  
-[[toc](#table-of-contents)]
-
-#### 1. Study
-[[toc](#table-of-contents)]
-
-    - dimensions of randomization  
-    - the family of random functions  (`random`, `randint`, `randomBoolean()`, etc.)   
-    - write your own custom randomization routines  
-    - the bouncing-ball randomization (multiple dimensions)  
-
-#### 2. Apply
-[[toc](#table-of-contents)]
-#### 3. Present
-[[toc](#table-of-contents)]
-   
-
 
