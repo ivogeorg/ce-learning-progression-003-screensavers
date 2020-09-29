@@ -839,8 +839,9 @@ simulator fidelity | yes | no
     - How is `pause` executed and what is affected (e.g. other repeated behavior, event handling, etc.)  
       - `pause()` should be avoided, especially with multiple `forever()` loops  
     - Advanced material: [software stack](https://mattwarren.org/2017/11/28/Exploring-the-BBC-microbit-Software-Stack/)  
-      - threads, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
-      - issues of speed, memory, etc.  
+      - **threads**, fibers, and the [fiber scheduler](https://lancaster-university.github.io/microbit-docs/advanced/)  
+      - Issues of speed, memory, etc.  
+      - Thread(fiber)-unsafety: Issues of non-deterministic splitting & rearrangement of code portions   
       - (Brendan) Does a time slice have to end for event handling to proceed?  
 
 #### 2. Apply
