@@ -377,7 +377,7 @@ Here is a longer [video of the code-writing simulation](https://msudenver.yuja.c
 
 ##### Rain
 
-Here is a longer [video of the rain simulation screensaver](https://msudenver.yuja.com/Dashboard/Permalink?authCode=1875257468&b=1799524&linkType=video). Notice how the "farther" (dimmer) raindrops, which look like they are falling in the background, are falling _faster_. Similarly, the ones at the forefront, are brightest and fall slowest. This is what you would see if you are looking at rain.
+Here is a longer [video of the rain simulation screensaver](https://msudenver.yuja.com/Dashboard/Permalink?authCode=1875257468&b=1799524&linkType=video). Notice how the "farther" (dimmer) raindrops, which look like they are falling in the background, are falling _slower_. Similarly, the ones at the forefront, are brightest and fall fastest. This is what you would see if you are looking at rain.
 
 ##### Frequency bar
 
