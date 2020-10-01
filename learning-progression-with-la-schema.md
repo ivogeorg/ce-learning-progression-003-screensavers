@@ -665,7 +665,7 @@ Let's unpack this:
    3. In mode `Working`, display the single character `W`.  
    4. In mode `Asleep`, display the single character `Z`.  
    5. Button `A` sets the mode to `Asleep`.  
-   6. Button `B` sets the mode to `Asleep`. 
+   6. Button `B` sets the mode to `Working`. 
 
 2. `[<lernact-prac>]`Write a program which recognizes two gestures, `TiltLeft` and `TiltRight`. Requirements:
    1. A global variable `gesture` of type `Gesture` holds he latest gesture detected.  
