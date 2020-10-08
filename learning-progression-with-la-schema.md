@@ -847,7 +847,7 @@ While we will cover `[<cept>]`_threads_ (that is, _execution threads_), `[<cept>
 #### 2. Apply
 [[toc](#table-of-contents)]
 
-1. `[<lernact-prac>]`Write a function `randomPrime` that generates random primes in the range [1, 1000]. _How many primes are there in this range?_ Write a small program to demonstrate the operation.    
+1. `[<lernact-prac>]`Write a function `randomPrime` that generates random primes in the range [1, 1000]. _How many primes are there in this range?_ Write a small program to demonstrate the operation. _Note: You will not be able to create such a big array on the micro:bit device, for example to apply the Sieve of Eratosthenes algorithm directly, because it will quickly run out of memory (Error code 021). So, you need to create a function to **test if a number is prime** and then apply in a loop from 1 to 1000, pushing only the numbers that pass the primality test into an array. This array will have considerably fewer than 1000 elements. Then you case use this array to generate random primes from it._      
 
 2. `[<lernact-prac>]`Add depth (aka distance) to your rain simulation, with more distant raindrops appearing dimmer and moving more slowly.  
 
