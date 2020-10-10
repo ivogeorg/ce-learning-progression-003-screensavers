@@ -683,7 +683,7 @@ Let's unpack this:
 [[toc](#table-of-contents)]
 
 1. `[<lernact-prac>]`Write a program with two modes, `Working` and `Asleep`. Requirements:
-   1. A global variable `mode` of type `Mode` holds the latest gesture detected.  
+   1. A global variable `mode` of type `Mode` holds the current mode.  
    2. Mode `Working` is default.  
    3. In mode `Working`, display the single character `W`.  
    4. In mode `Asleep`, display the single character `Z`.  
