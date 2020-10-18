@@ -6,7 +6,7 @@ Table of Contents
 =================
 
 * [CPE 1040 \- Fall 2020](#cpe-1040---fall-2020)
-  * [Learning Progression 003: Screensavers (Part 1)](#learning-progression-003-screensavers-part-1)
+  * [Learning Progression 003: Screensavers](#learning-progression-003-screensavers)
     * [1\. Arrays revisited](#1-arrays-revisited)
       * [1\. Study](#1-study)
         * [Arrays](#arrays)
@@ -114,10 +114,10 @@ Table of Contents
       * [3\. Present](#3-present-11)
       
 
-## Learning Progression 003: Screensavers (Part 1)
+## Learning Progression 003: Screensavers
 [[toc](#table-of-contents)]
 
-This progression is the culmination of the first part of the course, in which we program the bear-bones micro:bit without any external circuitry attached and without communication features. We pull together all the programming language features and best practices that we introduced in the previous two learning progressions, to write a significantly larger target program over 12 steps. This will present the opportunity to learn about some of the design considerations a programmer makes when approaching a larger project. The progression is also going to dig a bit deeper into the _softare stack_ of the micro:bit, and uncover the ways it affects these considerations.
+This progression is the culmination of the first half of the course, in which we program the bear-bones micro:bit without any external circuitry attached and without communication features. We pull together all the programming language features and best practices that we introduced in the previous two learning progressions, to write a significantly larger target program over 12 steps. This will present the opportunity to learn about some of the design considerations a programmer makes when approaching a larger project. The progression is also going to dig a bit deeper into the _softare stack_ of the micro:bit, and uncover the ways it affects these considerations.
 
 ### 1. Arrays revisited  
 [[toc](#table-of-contents)]
