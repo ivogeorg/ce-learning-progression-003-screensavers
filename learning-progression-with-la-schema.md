@@ -1326,10 +1326,13 @@ class Point {
 
 let p0 : Point = new Point(1, 2)
 
-basic.showNumber(p0.x)            // <-- call the getter of `_x`
-basic.pause(100)
-p0.x = 5                          // <-- call the setter of `_x`
+basic.showNumber(p0.x)                           // <-- call to the x getter
+p0.x = 5                                         // <-- call to the x setter
 basic.showNumber(p0.x)
+
+basic.showString(new Point(2, 4).y.toString())   // <-- call to the y getter
+basic.showNumber(new Point(3, 3).y)              // <-- call to the y getter
+
 ```
 Notice the following:
 1. The `get` and `set` keywords.  
