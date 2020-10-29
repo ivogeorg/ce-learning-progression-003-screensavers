@@ -1701,7 +1701,7 @@ This is one simple example of why knowledge of the layers of a software stack ar
 
 1. `[<lernact-prac>]`Create 6 separate `forever` loops, each one containing `showNumber()` with a different one of the numbers n = 1, 3, 5, 7, 9, 11, 13. Describe the behavior. Can you see all the numbers clearly?  
 2. `[<lernact-prac>]`Modify the previous program to show the either n or n + 1 toggled by pressing button A. Describe the behavior. How soon do the numbers switch after you press the button?  
-3. `[<lernact-prac>]`Modify the previous program, adding a random `pause()` between 300 and 1200 ms after `showNumber()`. Describe the behavior. Can you see the numbers out of order?   
+3. `[<lernact-prac>]`Modify the previous program, adding a random `pause()` between 3000 and 20000 ms after `showNumber()`. Describe the behavior. Can you see the numbers out of order?   
 
 #### 3. Present
 [[toc](#table-of-contents)]
