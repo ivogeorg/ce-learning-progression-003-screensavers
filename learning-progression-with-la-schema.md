@@ -1,11 +1,11 @@
-# CPE 1040 - Fall 2020
+# CPE 1040
 
 This is Learning Progression 003 of the course CPE 1040: Introduction to Computer Engineering at MSU Denver.
 
 Table of Contents
 =================
 
-* [CPE 1040 \- Fall 2020](#cpe-1040---fall-2020)
+* [CPE 1040](#cpe-1040)
   * [Learning Progression 003: Screensavers](#learning-progression-003-screensavers)
     * [1\. Arrays revisited](#1-arrays-revisited)
       * [1\. Study](#1-study)
